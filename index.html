@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label">Email<input id="email" type="email" placeholder="Enter your email" required/></label>
+        <label id="number-label">Age (optional)<input id="number" type="number" min="13" max="120" placeholder="age"/><label>
+        <label>Which option best describes your current role?
+          <select id="dropdown">
+            <option value=""></option>
+            <option value="1">Full-time job</option>
+            <option value="2">Full-time learner</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+        <label for="maybe"><input value="maybe" name="recommendation" type="radio" class="inline"/>Maybe</label>
+        <label for="not-sure"><input value="not-sure" name="recommendation" type="radio" class="inline" />Not sure</label>
+      </fieldset>
+      <fieldset>
+        <label id="improvement">What would you like to see improved? (Check all that apply)</label>
+          <label><input value="front-end-projects" type="checkbox" class="inline" /> Front-end Projects</label>
+          <label><input value="back-end-projects" type="checkbox" class="inline"/> Back-end Projects</label>
+          <label><input value="data-visualization" type="checkbox" class="inline"/> Data Visualization</label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="suggestions">Any comments or suggestions?
+          <textarea id="suggestions" type="text-area" cols="30" rows="3" placeholder="Enter your comment here"></textarea>
+        </label>
+        <fieldset>
+          <input type="submit" id="submit" />
+        </fieldset>
+    </form>
+  </body>
+</html>
